@@ -19,6 +19,12 @@ public class OverloadingHW {
     public static void main(String[] args) {
         OverloadingHW ov = new OverloadingHW();
         ov.sum(5,50);
-        System.out.println(ov);
+        System.out.println("Сумма: " + ov);
+        ov.sum();
+        System.out.println("Сумма: " + ov);
+        ov.sum(7,8,11);
+        System.out.println("Сумма: " + ov);
+        ov.sum(5,7,1,3);
+        System.out.println("Сумма: " + ov);
     }
 }

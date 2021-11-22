@@ -1,6 +1,6 @@
 package homework6;
 
-public class OverloadingHW {
+class OverloadingHW {
 
     int sum (int a){
             return a++;
@@ -20,7 +20,7 @@ public class OverloadingHW {
         OverloadingHW ov = new OverloadingHW();
         ov.sum(5,50);
         System.out.println("Сумма: " + ov);
-        ov.sum();
+        ov.sum(0);
         System.out.println("Сумма: " + ov);
         ov.sum(7,8,11);
         System.out.println("Сумма: " + ov);

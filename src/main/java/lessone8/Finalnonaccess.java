@@ -25,7 +25,7 @@ public class Human {
        final Finalnonaccess f = new Finalnonaccess();
     public static void main(String[] args) {
         Human h = new Human();
-        h.f = new Finalnonaccess(); // новый обьект с новым адресом
+        h.f = new Finalnonaccess(); // новый обьект с новым адресом не создастся если будет non-acc "final"
 
     }
 }

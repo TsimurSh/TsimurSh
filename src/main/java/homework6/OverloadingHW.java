@@ -2,8 +2,10 @@ package homework6;
 
 class OverloadingHW {
 
-    int sum (int a){
-            return a++;
+    int sum (){
+      int  result = 0;
+        System.out.println("Сумма равна: " + result);
+            return result;
     }
     int sum (int a, int b){
             return a + b;

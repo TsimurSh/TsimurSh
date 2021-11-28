@@ -2,14 +2,27 @@ package array;
 
 public class Lesson18_Array {
     public static void main(String[] args) {
+        // introduction to exceptions
+        int [] array8 = new int [3];
+        array8 [0]=1;
+        array8 [1]=1;
+        array8 [2]=1;
+        array8 [3]=1; // array index out of bounds exception
+
+
+
+
+
+
 
         // decloration
-        int[] array1;
+        int array1[];
+        array1 = new int[]{2,3,4};
+
         String[] array2;
-        double[][] array3;
+        double[]array3[];
         int[][] array4;
         // allocation
-        array1 = new int[]{2,3,4};
         array2 = new String[3];
         array3 = new[4][2]; // 4 одномерных массива по два элемента
         array4 = new[3][];  // с разным количеством переменных
@@ -24,6 +37,8 @@ public class Lesson18_Array {
         array3[3] = array4[2];
 
         int [] array5 = {4,3,2,1};
+        int  ar6 [], ar7 [][];
+
 
 
     }

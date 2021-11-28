@@ -9,11 +9,74 @@ public class Lesson18_Array {
         double[][] array3;
         int[][] array4;
         // allocation
-        array1 = new int[0];
+        array1 = new int[]{2,3,4};
         array2 = new String[3];
         array3 = new[4][2]; // 4 одномерных массива по два элемента
         array4 = new[3][];  // с разным количеством переменных
-        // initialization
-        System.out.println(array2.length);
+        //System.out.println(array2.length); // без параметра () запомнить!
+        // static initialization
+        array2[0] = "privat";
+        array2[1] = "Yuppy";
+        array2[2] = "whats'up";
+
+        array3[0][0] = 3.14;
+        array3[1][2] = 3.14;
+        array3[3] = array4[2];
+
+        int [] array5 = {4,3,2,1};
+
+
     }
 }
+
+public class Dinamic_Array {
+
+    public static void main(String[] args) {
+
+        String[] array1;
+        int[] array2;
+
+        array1 = new String[3];
+        array2 = new int[3];
+
+        for (int i = 0; i < array1.length; i++) {
+            array1[i] = "privat" + i;
+            System.out.println(array1[i]);
+        }
+
+        for (int i = 0; i < array2.length; i++) {
+            for (int j = 0; j < array2[i].length; j++) {
+                array2[i][j] = i + j;
+                System.out.println(array2[i][j]);
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -26,3 +26,14 @@ public class Array_Methods {
     }
 
 }
+
+public class CharToString {
+
+    public static void main(String[] args) {
+        char [] privet;
+        privet = new char[]{'p','r','i','v','a','t'};
+        String priv = new String(privet);
+        System.out.println(priv);
+    }
+
+        }

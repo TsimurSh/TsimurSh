@@ -1,26 +1,21 @@
 package array;
 
-public class Lesson18_Array {
+/*public class Lesson18_Array {
     public static void main(String[] args) {
         // introduction to exceptions
-        int [] array8 = new int [3];
-        array8 [0]=1;
-        array8 [1]=1;
-        array8 [2]=1;
-        array8 [3]=1; // array index out of bounds exception
-
-
-
-
-
+        int[] array8 = new int[3];
+        array8[0] = 1;
+        array8[1] = 1;
+        array8[2] = 1;
+        array8[3] = 1; // array index out of bounds exception
 
 
         // decloration
         int array1[];
-        array1 = new int[]{2,3,4};
+        array1 = new int[]{2, 3, 4};
 
         String[] array2;
-        double[]array3[];
+        double[] array3[];
         int[][] array4;
         // allocation
         array2 = new String[3];
@@ -36,62 +31,36 @@ public class Lesson18_Array {
         array3[1][2] = 3.14;
         array3[3] = array4[2];
 
-        int [] array5 = {4,3,2,1};
-        int  ar6 [], ar7 [][];
-
-
+        int[] array5 = {4, 3, 2, 1};
+        int ar6[], ar7[][];
 
     }
-}
 
-public class Dinamic_Array {
 
-    public static void main(String[] args) {
+    public static class Dinamic_Array {
 
-        String[] array1;
-        int[] array2;
+        public static void main(String[] args) {
 
-        array1 = new String[3];
-        array2 = new int[3];
+            String[] array1;
+            int[] array2;
 
-        for (int i = 0; i < array1.length; i++) {
-            array1[i] = "privat" + i;
-            System.out.println(array1[i]);
-        }
+            array1 = new String[3];
+            array2 = new int[3];
 
-        for (int i = 0; i < array2.length; i++) {
-            for (int j = 0; j < array2[i].length; j++) {
-                array2[i][j] = i + j;
-                System.out.println(array2[i][j]);
+            for (int i = 0; i < array1.length; i++) {
+                array1[i] = "privat" + i;
+                System.out.println(array1[i]);
+            }
+
+            for (int i = 0; i < array2.length; i++) {
+                for (int j = 0; j < array2[i].length; j++) {
+                    array2[i][j] = i + j;
+                    System.out.println(array2[i][j]);
+                }
             }
         }
     }
+
+
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

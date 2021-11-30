@@ -26,18 +26,3 @@ public class Array_Methods {
     }
 
 }
-
-public class CharToString {
-
-    public static void main(String[] args) {
-        char [] reverse;
-        reverse = new char[]{'m','a','m','a'};
-
-        //for (int i = 0; i < reverse.; i++) {
-
-
-        String m = new String(reverse);
-        System.out.println(m);
-    }
-
-        }

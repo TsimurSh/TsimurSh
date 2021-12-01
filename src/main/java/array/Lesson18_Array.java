@@ -11,6 +11,7 @@ package array;
 
 
         // decloration
+        int b [], c; // объявление и массива и переменной одновременно
         int array1[];
         array1 = new int[]{2, 3, 4};
 
@@ -35,7 +36,7 @@ package array;
         int ar6[], ar7[][];
 
     }
-
+*/
 
     public static class Dinamic_Array {
 

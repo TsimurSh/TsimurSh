@@ -1,5 +1,7 @@
-package array;
+package lessone19_arrays;
 
+
+import java.sql.SQLOutput;
 
 public class CharToString {
 
@@ -13,6 +15,12 @@ public class CharToString {
         }
         String mama = new String(reverse2);
         System.out.println(mama);
+
+        StringBuilder sb = new StringBuilder("Hello holl");
+        sb.append(reverse1,1,3); // c какого индекса и сколько
+        sb.insert(1,reverse1,2,2); // c какой буквы и тоже самое, что выше
+        System.out.println(sb);
+
 
     }
 }

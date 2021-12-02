@@ -1,6 +1,6 @@
 package array;
 
-/*public class Lesson18_Array {
+public class Lesson18_Array {
     public static void main(String[] args) {
         // introduction to exceptions
         int[] array8 = new int[3];
@@ -20,8 +20,8 @@ package array;
         int[][] array4;
         // allocation
         array2 = new String[3];
-        array3 = new[4][2]; // 4 одномерных массива по два элемента
-        array4 = new[3][];  // с разным количеством переменных
+        array3 = new double[4][2]; // 4 одномерных массива по два элемента
+        array4 = new int[3][];  // с разным количеством переменных
         //System.out.println(array2.length); // без параметра () запомнить!
         // static initialization
         array2[0] = "privat";
@@ -36,7 +36,7 @@ package array;
         int ar6[], ar7[][];
 
     }
-*/
+
 
     public static class Dinamic_Array {
 
@@ -61,7 +61,4 @@ package array;
             }
         }
     }
-
-
-
 }

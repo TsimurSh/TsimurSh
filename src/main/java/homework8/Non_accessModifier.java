@@ -12,7 +12,7 @@ class Non_accessModifier {
         double length = 2*pi*rad1;
         return length;
     }
-    double result void (double rad2){
+    double result; void (double rad2){
         System.out.println ("Радиус: " + rad2 + "Длина: " + formula1(rad2) + "Площадь: " + formula(rad2,rad2));
     }
 

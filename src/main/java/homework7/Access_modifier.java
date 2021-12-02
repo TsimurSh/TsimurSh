@@ -1,7 +1,7 @@
 package homework7;
 
 
-public class Access_modifier {
+/*public class Access_modifier {
 
     public static void main(String[] args) {
         main.java.homework5.Employee e5 = new main.java.homework5.Employee(91, "Grisha", "Grushy");
@@ -14,4 +14,4 @@ public class Access_modifier {
         e7.salaryUp2();
 
     }
-}
+}*/

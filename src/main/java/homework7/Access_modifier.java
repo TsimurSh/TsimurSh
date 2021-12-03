@@ -1,5 +1,6 @@
 package homework7;
 
+import static homework8.Non_accessModifier.pi //* - все static переменные класса
 
 /*public class Access_modifier {
 

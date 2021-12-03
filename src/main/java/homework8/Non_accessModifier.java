@@ -1,8 +1,8 @@
 package homework8;
 
-class Non_accessModifier {
+public class Non_accessModifier {
 
-    static final double pi = 3.14;
+    public static final double pi = 3.14;
 
     double formula (double rad){
         double area = pi*rad*rad;
@@ -27,9 +27,7 @@ class Non_accessModifier {
             System.out.println(a % b);
 
         }
-    }
-
-    class Non2 {
+   protected class Non2 {
         public static void main(String[] args) {
             Non_accessModifier.multiply(1, 3, 6);
             Non_accessModifier.divide(5, 9);
@@ -40,5 +38,7 @@ class Non_accessModifier {
             n1.result(3.5);
         }
     }
+}
+
 
 

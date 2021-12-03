@@ -1,4 +1,4 @@
-package lessone19_arrays;
+package lesson_19_arrays;
 
 import java.util.Arrays;
 

@@ -40,15 +40,17 @@ public class Employee {
     public void showvalueSalary() {
         System.out.println(salary);
     }
-}
 
-class EmloyeeTest {
-    public static void main(String[] args) {
-        Employee e1 = new Employee(77, "Gosza", 1456.7, "Tuftalogia");
-        Employee e2 = new Employee(77, "Grisza", 106.7, "Tuftaproizwodstwo");
+    class EmloyeeTest {
+        public static void main(String[] args) {
+            Employee e1 = new Employee(77, "Gosza", 1456.7, "Tuftalogia");
+            Employee e2 = new Employee(77, "Grisza", 106.7, "Tuftaproizwodstwo");
 
-        e1.salaryUp2();
-        System.out.println("Новая з/п работника " + e1.surname + ": " + e1.salary);
+            e1.salaryUp2();
+            System.out.println("Новая з/п работника " + e1.surname + ": " + e1.salary);
+        }
+
     }
 
 }
+

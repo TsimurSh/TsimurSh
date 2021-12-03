@@ -1,4 +1,4 @@
-package lessone19_arrays;
+package lesson_19_arrays;
 
 public class Lesson18_Array {
     public static void main(String[] args) {

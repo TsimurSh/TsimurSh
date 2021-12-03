@@ -12,9 +12,9 @@ public class Student {
         gradeForeignLang = gradeForeignLang1;
     }
 
-    Student(byte indexID2, String name2, String lastName2, int year2) {
+        Student (byte indexID2, String name2, String lastName2, int year2) {
 
-        this(indexID2, name2, lastName2, year2);
+        this (indexID2, name2, lastName2, year2);
     }
 
     Student() {
@@ -28,7 +28,7 @@ public class Student {
     double gradeEconomy;
     double gradeForeignLang;
 
-    class StudentTest {
+    static class StudentTest {
 
         double averagegrade(Student s) {
             double resultAverage = (s.gradeEconomy + s.gradeMath + s.gradeForeignLang) / 3;

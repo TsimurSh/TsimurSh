@@ -21,7 +21,7 @@ public class Array_Methods {
             if (array[i] < min)
                min =  array[i];
         }
-        public class Solution {
+        public class ArrayFill {
 
             public static int[] array = new int[20];
             public static int valueStart = 10;

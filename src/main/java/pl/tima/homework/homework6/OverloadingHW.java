@@ -22,7 +22,7 @@ class OverloadingHW {
         OverloadingHW ov = new OverloadingHW();
         ov.sum(5,50);
         System.out.println("Сумма: " + ov);
-        ov.sum(0);
+//        ov.sum(0);
         System.out.println("Сумма: " + ov);
         ov.sum(7,8,11);
         System.out.println("Сумма: " + ov);

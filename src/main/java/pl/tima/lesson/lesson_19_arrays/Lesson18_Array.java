@@ -30,7 +30,7 @@ public class Lesson18_Array {
 
         array3[0][0] = 3.14;
         array3[1][2] = 3.14;
-        array3[3] = array4[2];
+//        array3[3] = array4[2];
 
         int[] array5 = {4, 3, 2, 1};
         int ar6[], ar7[][];
@@ -54,10 +54,10 @@ public class Lesson18_Array {
             }
 
             for (int i = 0; i < array2.length; i++) {
-                for (int j = 0; j < array2[i].length; j++) {
-                    array2[i][j] = i + j;
-                    System.out.println(array2[i][j]);
-                }
+//                for (int j = 0; j < array2[i].length; j++) {
+//                    array2[i][j] = i + j;
+//                    System.out.println(array2[i][j]);
+//                }
             }
         }
     }

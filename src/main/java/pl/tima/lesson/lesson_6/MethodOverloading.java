@@ -16,10 +16,10 @@ class MethodOverloading2Test {
         MethodOverloading2Test mo2 = new MethodOverloading2Test();
 
         int a;
-        a = mo2.sum(4, 4);
-        System.out.println(a);
+//        a = mo2.sum(4, 4);
+//        System.out.println(a);
 
-        String s = mo2.sum("Kola", "Dima");
-        System.out.println(s);
+//        String s = mo2.sum("Kola", "Dima");
+//        System.out.println(s);
     }
 }

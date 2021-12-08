@@ -1,18 +1,21 @@
-package lesson_19_arrays;
+package pl.tima.lesson.lesson_19_arrays;
 
 public class CharToString {
 
     public static void main(String[] args) {
-        char[] reverse1;
-        reverse1 = new char[]{'m', 'a', 'm', 'a'};
-        char reverse2[] = new char[reverse1.length];
-        int i1 = 0;
-        for (int i = reverse1.length; i >= 0; i--, i1++) {
-            reverse2[i1] = reverse1[i];
+
+
+        String m = "mama";
+        char[] array = m.toCharArray();
+        for (int i = 0; i < array.length / 2; i++) {
+            char temp = array[i];
+            array[i] = array[array.length - i - 1];
+            array[array.length - i - 1] = temp;
         }
-        String mama = new String(reverse2);
+        String mama = new String(array);
         System.out.println(mama);
 
+        char[] reverse1 = new char []{'p','r','i','v','a','t'};
         StringBuilder sb = new StringBuilder("Hello holl");
         sb.append(reverse1, 1, 3); // c какого индекса и сколько
         sb.insert(1, reverse1, 2, 2); // c какой буквы и тоже самое, что выше

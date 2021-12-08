@@ -1,4 +1,4 @@
-package main.java.homework5;
+package pl.tima.homework.homework5;
 
 public class Employee {
 
@@ -13,11 +13,14 @@ public class Employee {
         department = d1;
         salary = sal1;
     }
-    public Employee(int i2, String s2, String d2) {
-        this(id = i2, surname = s2, department = d2);
+
+    public Employee(int id, String surname, String department) {
+        this.id = id;
+        this.surname = surname;
+        this.department = department;
     }
 
-    private  Employee (){
+    private  Employee(int i1, String gosza, double v, String tuftalogia){
 
     }
 
@@ -41,7 +44,7 @@ public class Employee {
         System.out.println(salary);
     }
 
-    class EmloyeeTest {
+    static class EmloyeeTest {
         public static void main(String[] args) {
             Employee e1 = new Employee(77, "Gosza", 1456.7, "Tuftalogia");
             Employee e2 = new Employee(77, "Grisza", 106.7, "Tuftaproizwodstwo");

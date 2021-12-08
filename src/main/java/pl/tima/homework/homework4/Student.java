@@ -12,10 +12,7 @@ public class Student {
         gradeForeignLang = gradeForeignLang1;
     }
 
-        Student (byte indexID2, String name2, String lastName2, int year2) {
 
-        this (indexID2, name2, lastName2, year2);
-    }
 
     Student() {
     }
@@ -27,6 +24,9 @@ public class Student {
     double gradeMath;
     double gradeEconomy;
     double gradeForeignLang;
+
+    public Student(int i, String vovka, String ivanov, int i1) {
+    }
 
     static class StudentTest {
 
@@ -47,9 +47,8 @@ public class Student {
             s1.gradeEconomy = 5.3;
             s1.gradeEconomy = 3.2;
 
-            Student s2 = new Student(004, "Vovka", "Ivanov", 4);
+            Student s2 = new Student(4, "Vovka", "Ivanov", 4);
 
-            Student s3 = new Student(005, "Kolka", "Drug", 5, 4.5, 4.6, 4.7);
 
             StudentTest sTest = new StudentTest();
             sTest.averagegrade(s1);

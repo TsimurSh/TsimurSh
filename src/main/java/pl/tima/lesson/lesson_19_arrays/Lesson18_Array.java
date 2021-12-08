@@ -1,4 +1,4 @@
-package lesson_19_arrays;
+package pl.tima.lesson.lesson_19_arrays;
 
 public class Lesson18_Array {
     public static void main(String[] args) {

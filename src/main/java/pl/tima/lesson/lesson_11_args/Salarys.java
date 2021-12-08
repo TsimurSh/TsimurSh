@@ -1,4 +1,4 @@
-package lesson_11_args;
+package pl.tima.lesson.lesson_11_args;
 
 public class Salarys {
 

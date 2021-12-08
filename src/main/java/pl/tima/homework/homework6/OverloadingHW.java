@@ -1,4 +1,4 @@
-package homework6;
+package pl.tima.homework.homework6;
 
 class OverloadingHW {
 

@@ -1,4 +1,4 @@
-package pl.tima.lesson.lesson_19_arrays;
+package pl.tima.facultativ;
 
 public class Fakulatiw {
 

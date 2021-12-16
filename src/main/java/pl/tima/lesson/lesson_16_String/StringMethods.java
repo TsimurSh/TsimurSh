@@ -1,4 +1,4 @@
-package pl.tima.lesson.lesson16;
+package pl.tima.lesson.lesson_16_String;
 
 public class StringMethods {
     public static void main(String[] args) {
@@ -19,6 +19,9 @@ public class StringMethods {
         System.out.println(b1);
         boolean b2 = s1.endsWith("at");
         System.out.println(b2);
+        var b3 = s2.contains("ma");
+        System.out.println(b3);
+
 
         String s3 = s2.substring(1,3); // all to 3 index
         System.out.println(s3);
@@ -34,6 +37,13 @@ public class StringMethods {
         System.out.println(s5_1 == s6);
 
         System.out.println(s5_1.concat(s1)); // s5 plus s1
+
+        String s7 = s1.toUpperCase();
+        System.out.println(s7);
+        boolean b4 = s7.equalsIgnoreCase(s1);
+
+        System.out.println(s7.toLowerCase() + b4);
+
 
 
 

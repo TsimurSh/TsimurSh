@@ -1,5 +1,7 @@
 package pl.tima.lesson.lesson_16_String;
 
+import java.util.Arrays;
+
 public class StringMethods {
     public static void main(String[] args) {
         String s1 = new String("privat");
@@ -10,7 +12,7 @@ public class StringMethods {
 
         int i = s1.indexOf('r', 1);
         System.out.println(i);
-        int i1 = s2.indexOf('a');
+        int i1 = s2.lastIndexOf("ma");
         System.out.println(i1);
 
         boolean b = s1.startsWith("va");
@@ -21,6 +23,7 @@ public class StringMethods {
         System.out.println(b2);
         var b3 = s2.contains("ma");
         System.out.println(b3);
+        boolean b4 = s1.matches(s2);
 
 
         String s3 = s2.substring(1,3); // all to 3 index
@@ -40,12 +43,22 @@ public class StringMethods {
 
         String s7 = s1.toUpperCase();
         System.out.println(s7);
-        boolean b4 = s7.equalsIgnoreCase(s1);
+        boolean b6 = s7.equalsIgnoreCase(s1);
 
         System.out.println(s7.toLowerCase() + b4);
 
+        String se1 = new String("privet, meshok kanfet");
+        char [] cha = se1.toCharArray();
 
+        int i2 = se1.compareTo(s1); // возвращает количество совпадающих символов
+        System.out.println(i2);
 
+        boolean b5 = s1.regionMatches(2,se1,7,3); //Сравнивает части строк
+        System.out.println(b5);
+
+        String str = "Good news everyone!";
+        String[] strings = str.split("ne");
+        System.out.println(Arrays.toString(strings));
 
 
     }

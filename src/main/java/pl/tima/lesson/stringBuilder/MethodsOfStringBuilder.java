@@ -18,5 +18,8 @@ public class MethodsOfStringBuilder {
         StringBuffer sb4 = new StringBuffer(s1);
         System.out.println(sb3 + " or " +sb4);
 
+        int capacity = sb2.capacity();
+        System.out.println(capacity);
+
     }
 }

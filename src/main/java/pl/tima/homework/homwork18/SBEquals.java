@@ -7,6 +7,8 @@ public class SBEquals {
         StringBuilder sb3 = suite;
         System.out.println(stringBuilderEguals(suite, accommodation));
         System.out.println(stringBuilderEguals(suite, sb3));
+        sb3.deleteCharAt(3);
+        System.out.println(sb3);
     }
 
     private static boolean stringBuilderEguals(StringBuilder sb1, StringBuilder sb2) {

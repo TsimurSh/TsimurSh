@@ -27,6 +27,7 @@ public class TokenizerHowIsWork {
             tokens [i] = token.nextToken();
             i++;
         }
+
         return tokens;
     }
 }

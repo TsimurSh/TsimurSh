@@ -1,6 +1,6 @@
 package pl.tima.lesson.lesson_6;
 
-public class CubeinCube {
+public class CubeInCube {
 
     public static void main(String[] args) {
         System.err.println(ningth(3));

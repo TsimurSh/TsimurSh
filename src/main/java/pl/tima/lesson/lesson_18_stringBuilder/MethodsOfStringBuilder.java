@@ -1,4 +1,4 @@
-package pl.tima.lesson.stringBuilder;
+package pl.tima.lesson.lesson_18_stringBuilder;
 
 public class MethodsOfStringBuilder {
 

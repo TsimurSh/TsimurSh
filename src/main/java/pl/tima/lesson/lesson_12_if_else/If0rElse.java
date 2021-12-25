@@ -1,6 +1,6 @@
 package main.java.ifstatement;
 
-public class If0relse {
+public class If0rElse {
     public static void main(String[] args) {
         int aa = 300;
 

@@ -1,20 +1,46 @@
 package pl.tima.converter;
 
+
+import java.text.DateFormat;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.GregorianCalendar;
+import java.util.*;
+
+import static java.util.GregorianCalendar.BC;
 
 public class DateFormatter {
 
     public static void main(String[] args) {
-            SimpleDateFormat formatter = new SimpleDateFormat("dd MM yyyy");
-            Date date = new Date();
 
-            System.out.println(formatter.format(date));
+        SimpleDateFormat formatter = new SimpleDateFormat("dd MM yyyy");
+        Date date = new Date();
+        System.out.println(formatter.format(date));
+
+        GregorianCalendar cannes = new GregorianCalendar(216, 07, 22);
+        cannes.set(Calendar.ERA, BC);
+        DateFormat dtCannes = new SimpleDateFormat("dd MMM YYY GG");
+        System.out.println(dtCannes.format(cannes.getTime()));
+
         Calendar calendar = new GregorianCalendar();
-            Date dateExe = calendar.getTime();
-            Thread.currentThread(); // ждет в миллисекундах
+        calendar.set(Calendar.ERA, BC);
+
+        TimeZone dateExe = calendar.getTimeZone();
+//            Thread.currentThread(); // ждет в миллисекундах
         System.out.println(dateExe);
+
+        String strDate = "Sat, April 8, 2020";
+        SimpleDateFormat formatter1 = new SimpleDateFormat("EEE, MMMM d, yyyy", Locale.ENGLISH);
+        Date date2 = null;
+        try {
+            date2 = formatter.parse(strDate);
+            System.out.println(date2);
+        } catch (ParseException e) {
+            e.printStackTrace();
+            System.out.println(formatter1.format(date2));
+        }
+    }  Scanner scanner;
+
+    {
+        scanner = new Scanner(System.in);
     }
 }

@@ -22,13 +22,18 @@ public class ArrayMethods {
 
     public static void main(String[] args) {
         int arr1[] = {0, -4, 7, 12, -50, 101};
+        int arr2[] = {0, -4, 7, 12, -50, 101};
+//        int arr2[] = {0, -4, 7, 7, 5, 11};
         bubbleSort(arr1);
         System.out.println(Arrays.toString(arr1));
         Arrays.sort(arr1); // соритирует по возрастанию
 
         int index1 = Arrays.binarySearch(arr1, 7); // ищет только отсортированные элементы массивов
-        System.out.println(index1);
+//        System.out.println(index1);
 
+        int boo = Arrays.compare(arr1,arr2);
+        int bo = Arrays.mismatch(arr1,arr2);
+        System.out.println(boo + " "+ bo);
     }
 
     public static void minMax(double[] array) {

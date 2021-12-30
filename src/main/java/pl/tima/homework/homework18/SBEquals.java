@@ -1,4 +1,4 @@
-package pl.tima.homework.homwork18;
+package pl.tima.homework.homework18;
 
 public class SBEquals {
     public static void main(String[] args) {

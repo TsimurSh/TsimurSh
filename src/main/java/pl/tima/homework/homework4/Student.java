@@ -32,7 +32,8 @@ public class Student {
 
         double averagegrade(Student s) {
             double resultAverage = (s.gradeEconomy + s.gradeMath + s.gradeForeignLang) / 3;
-            System.out.println("Средняя оценка студента " + s.name + " " + s.lastName + " с номером Студ.билета " + s.indexID + ": " + resultAverage);
+            System.out.println("Средняя оценка студента " + s.name + " " + s.lastName +
+                    " с номером Студ.билета " + s.indexID + ": " + resultAverage);
             return resultAverage;
         }
 

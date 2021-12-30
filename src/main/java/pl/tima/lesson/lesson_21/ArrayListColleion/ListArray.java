@@ -1,4 +1,4 @@
-package pl.tima.lesson21.ArrayListColleion;
+package pl.tima.lesson.lesson_21.ArrayListColleion;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -17,7 +17,7 @@ public class ListArray {
         list.add("wrapper");
         list.add(1, "abrakadabra");
 //        list.addAll(1,list1);
-        list.set(1, "nie-abrababra"); // like replace
+        list.set(1,"nie-abrababra"); // like replace
 //        System.out.println(list.remove("wrapper")); // возвращает boolean ? если удалил и : false when don't
 
         ArrayList<String> list1 = new ArrayList<>(list);

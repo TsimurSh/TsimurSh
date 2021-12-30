@@ -1,13 +1,14 @@
 package pl.tima.lesson21.ArrayListColleion;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class ListArray {
     public static void main(String[] args) {
         ArrayList<StringBuilder> listsb1 = new ArrayList<>();
         StringBuilder sb1 = new StringBuilder("bell-boy");
         StringBuilder sb2 = new StringBuilder("desk-clerk");
-        StringBuilder sb3 = new StringBuilder("bell-boy");
+        StringBuilder sb3 = new StringBuilder("lift-boy");
         listsb1.add(sb1);
         listsb1.add(sb2);
         listsb1.add(sb3);
@@ -32,9 +33,11 @@ public class ListArray {
             int sizeList3 = list3.hashCode();
             int sizeList1 = list1.hashCode();
 //            System.out.println(list1 + " " + list3 + " " + sizeList1 + " " + sizeList3);
-            StringBuilder[] sbArr1 = listsb1.toArray(new StringBuilder[listsb1.size()]);
+            Collections.sort(listsb1); // сортирует list
+
+            StringBuilder[] sbArr1 = listsb1.toArray(new StringBuilder[listsb1.size()]); // sintex toArray(); method
             for (StringBuilder sb : sbArr1) {
-                System.out.print(sb + " ");
+                 System.out.print(sb + " ");
             }
         }
     }

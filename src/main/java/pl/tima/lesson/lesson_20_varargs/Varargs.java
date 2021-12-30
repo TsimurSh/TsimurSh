@@ -10,14 +10,25 @@ public class Varargs {
         }
         System.out.println(summa);
         }
-        static void summaIntArr ( int[] ...a){
-            Arrays.sort(a);
-            System.out.println(Arrays.toString(a));
+        static int [] copyIntArrsToArr ( int[] ...arrs){
+        int lenth =0;
+        for (int [] arr : arrs){
+            lenth += arr.length;
+        }
+        int [] copy = new int[lenth];
+        int count = 0;
+        for (int [] arr1 : arrs ){
+            for (int temp : arr1){
+                copy[count] = temp;
+                count++;
+            }
+        } return copy;
+//        System.out.println(Arrays.toString(a));
         }
 
         public static void main (String[]args){
             summaInt(new int[]{6, 7, 8, 9, 0, 7, 5, 0});
-            summaIntArr(new int[]{6, 7, 8, 9, 0, 7, 54, 3});
+            System.out.println(Arrays.toString(copyIntArrsToArr(new int[]{6, 7, 8, 9, 0,98, 7, 54, 3},new int[]{6, 7, 8, 9, 0, 7, 5, 0},new int[]{6, 7, 8, 9, 10, 7, 5, 0})));
 
                     float f = (float) 128.50;
                     int i = (int) f;

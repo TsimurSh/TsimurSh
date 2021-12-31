@@ -20,7 +20,7 @@ public class SortArrayList {
         System.out.println(listA.equals(list));
 
     }
-    public int insertionSort (int [] sortArr){
+    public int [] insertionSort (int [] sortArr){
         for (int s = 1; s< sortArr.length; s++){
             int current = sortArr[s];
             int j = s-1;
@@ -30,6 +30,7 @@ public class SortArrayList {
             }
             sortArr [j+1] = current;
         }
+    return sortArr;
     }
 
 }

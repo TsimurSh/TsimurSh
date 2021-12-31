@@ -21,7 +21,7 @@ public class StringMethods {
         System.out.println(b1);
         boolean b2 = s1.endsWith("at");
         System.out.println(b2);
-        var b3 = s2.contains("ma");
+        boolean b3 = s2.contains("ma");
         System.out.println(b3);
         boolean b4 = s1.matches(s2);
 

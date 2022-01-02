@@ -1,6 +1,7 @@
 package pl.tima.lesson.lesson_21.ArrayListColleion;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 
 public class ListArray {
@@ -37,7 +38,10 @@ public class ListArray {
 
             StringBuilder[] sbArr1 = listsb1.toArray(new StringBuilder[listsb1.size()]); // sintex toArray(); method
             for (StringBuilder sb : sbArr1) {
-                 System.out.print(sb + " ");
+                 System.out.println(sb + " ");
+
+                 Object [] arrayFromArrayList = list3.toArray();
+                System.out.print(Arrays.toString(arrayFromArrayList));
             }
         }
     }

@@ -40,7 +40,7 @@ public class ListArray {
             for (StringBuilder sb : sbArr1) {
                  System.out.println(sb + " ");
 
-                 Object [] arrayFromArrayList = list3.toArray();
+                 Object [] arrayFromArrayList = list3.toArray(); // возвращает обект object
                 System.out.print(Arrays.toString(arrayFromArrayList));
             }
         }

@@ -11,6 +11,7 @@ public class CollectionsExample {
         map1.put(883, "middle name");
         map1.put(884, "nationality");
         map1.put(885, "date of birth");
+        map1.put(885, "place of birth");
         map1.remove(885);
         System.out.println(map1);
 

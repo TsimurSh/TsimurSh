@@ -4,7 +4,14 @@ import java.util.*;
 
 public class CollectionsExample {
     public static void main(String[] args) {
-        Set <Integer> intSet = new HashSet<>();
+        Set <Exi> exx = new HashSet<>();
+        exx.add(new Exi());
+        exx.add(new Exi());
+        exx.add(new Exi());
+        exx.remove(exx.iterator().next());
+
+        Set <Integer> list = new HashSet<>();
+
         Map<Integer ,String> map1 = new HashMap<>();
         map1.put(881, "surname Shichsefiyeu");
         map1.put(882, "Christian name");
@@ -15,13 +22,16 @@ public class CollectionsExample {
         map1.remove(885);
         System.out.println(map1);
 
-        get10000Elements((List) intSet);
+        get10000Elements(list);
 
     }
-    public static void get10000Elements (List list){
+    public static void get10000Elements (Set list){
         int count = 10000;
         for (int i = 0; i < count; i++){
-            list.get(count /=2);
+            list.add(count /=2); // попяцсот
         }
+    }
+    static public class Exi {
+
     }
 }

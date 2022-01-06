@@ -2,7 +2,6 @@ package pl.tima.converter;
 
 
 import java.text.DateFormat;
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
@@ -31,16 +30,5 @@ public class DateFormatter {
         String strDate = "Sat, April 8, 2020";
         SimpleDateFormat formatter1 = new SimpleDateFormat("EEE, MMMM d, yyyy", Locale.ENGLISH);
         Date date2 = null;
-        try {
-            date2 = formatter.parse(strDate);
-            System.out.println(date2);
-        } catch (ParseException e) {
-            e.printStackTrace();
-            System.out.println(formatter1.format(date2));
-        }
-    }  Scanner scanner;
-
-    {
-        scanner = new Scanner(System.in);
     }
 }

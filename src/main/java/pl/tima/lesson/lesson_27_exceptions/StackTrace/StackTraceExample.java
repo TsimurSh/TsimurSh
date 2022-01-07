@@ -1,4 +1,4 @@
-package pl.tima.StackTrace;
+package pl.tima.lesson.lesson_27_exceptions.StackTrace;
 
 public class StackTraceExample {
 

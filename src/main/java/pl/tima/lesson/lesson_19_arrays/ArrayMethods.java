@@ -19,10 +19,28 @@ public class ArrayMethods {
             }
         }
     }
+        public static boolean isnumb(String str){
+            if (str.length() == 0) {
+                return false;
+            }
+
+            char[] chars = str.toCharArray();
+            for (int i = 0; i < chars.length; i++) {
+                char character = chars[i];
+                if ((i != 0 && character == '-') // Строка содержит '-'
+                        || (!Character.isDigit(character) && character != '-') // или не цифра и не начинается с '-'
+                        || (chars.length == 1 && character == '-')) // или одиночный '-'
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
 
     public static boolean main(String[] args) {
+        int sum = 0;
         int arr1[] = {0, -4, 7, 12, -50, 101};
-        String arr2[] = {"to take keys alont with somebody", "876", "to hamper", "foreign exchange desk"};
+        String [] arr2 = {"to take keys alont with somebody", "876", "to hamper", "foreign exchange desk"};
         int arr8[] = {0, -4, 7, 7, 5, 11};
         bubbleSort(arr1);
         System.out.println(Arrays.toString(arr1));
@@ -48,26 +66,11 @@ public class ArrayMethods {
         Arrays.fill(array1, fPart, array1.length, valueEnd);
         System.out.println(Arrays.toString(array1));
 
-        public int num = 0;
-        public static boolean isNumb (String str){ // chek character
-            if (str.length() == 0) {
-                return false;
-            }
+        // chek character
 
-            char[] chars = str.toCharArray();
-            for (int i = 0; i < chars.length; i++) {
-                char character = chars[i];
-                if ((i != 0 && character == '-') // Строка содержит '-'
-                        || (!Character.isDigit(character) && character != '-') // или не цифра и не начинается с '-'
-                        || (chars.length == 1 && character == '-')) // или одиночный '-'
-                {
-                    return false;
-                }
-            }
-        }
         for (String strings : arr2){
-           if( isNumb(arr2) ){
-             int num +=  Integer.parseInt(strings);
+           if( isnumb (arr2) ){
+             int sum +=  Integer.parseInt(strings);
            }
         }
     }

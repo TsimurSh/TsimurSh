@@ -3,6 +3,22 @@ package pl.tima.lesson.lesson_19_arrays;
 import java.util.Arrays;
 
 public class ArrayMethods {
+    ArrayMethods () {
+    }
+
+
+    public int[] insertionSort(int[] sortArr) {
+        for (int s = 1; s < sortArr.length; s++) {
+            int current = sortArr[s];
+            int j = s - 1;
+            while (j >= 0 && current < sortArr[j]) {
+                sortArr[j + 1] = sortArr[j];
+                j--;
+            }
+            sortArr[j + 1] = current;
+        }
+        return sortArr;
+    }
 
     public static void bubbleSort(int[] arr) {
         boolean sort = false;
@@ -37,7 +53,8 @@ public class ArrayMethods {
             return true;
         }
 
-    public static boolean main(String[] args) {
+    public static void main(String[] args) {
+        ArrayMethods arry = new ArrayMethods();
         int sum = 0;
         int arr1[] = {0, -4, 7, 12, -50, 101};
         String [] arr2 = {"to take keys alont with somebody", "876", "to hamper", "foreign exchange desk"};
@@ -66,12 +83,5 @@ public class ArrayMethods {
         Arrays.fill(array1, fPart, array1.length, valueEnd);
         System.out.println(Arrays.toString(array1));
 
-        // chek character
-
-        for (String strings : arr2){
-           if( isnumb (arr2) ){
-             int sum +=  Integer.parseInt(strings);
-           }
-        }
     }
 }

@@ -68,7 +68,7 @@ public class ArrayMethods {
 
         int boo = Arrays.compare(arr1, arr8);
         int bo = Arrays.mismatch(arr1, arr8);
-        System.out.println(boo + " " + bo);
+        System.out.println(boo + " " + bo + " ");
 
 
         int[] array1 = new int[20];

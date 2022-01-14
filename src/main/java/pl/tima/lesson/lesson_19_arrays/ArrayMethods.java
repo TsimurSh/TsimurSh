@@ -58,7 +58,7 @@ public class ArrayMethods {
         int sum = 0;
         int arr1[] = {0, -4, 7, 12, -50, 101};
         String [] arr2 = {"to take keys alont with somebody", "876", "to hamper", "foreign exchange desk"};
-        int arr8[] = {0, -4, 7, 7, 5, 11};
+        int arr8[] = {0, -4, 7, 7, 5, 11,4};
         bubbleSort(arr1);
         System.out.println(Arrays.toString(arr1));
         Arrays.sort(arr1); // соритирует по возрастанию

@@ -12,6 +12,8 @@ public class Facultativ5 {
         List<User> users = getUsersFromDataBase();
         User withLongestName = UserService.getLongestName(users);
         System.out.println(withLongestName);
+        System.out.println("Done");
+
         }
     }
 

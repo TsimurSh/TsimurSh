@@ -4,14 +4,14 @@ import pl.tima.facultativ.repository.InheritanceX;
 
 public class InheritanceY extends InheritanceX {
 
-    public InheritanceY(int i) {
-        System.out.println("Y");
-    }
-
-    public boolean xxx() {
-
-        return true;
-}
+//    public InheritanceY(int i) {
+//        System.out.println("Y");
+//    }
+//
+//    public boolean xxx() {
+//
+//        return true;
+//}
 //    @Override
 //    public void xy() {
 //        System.out.println("Y");

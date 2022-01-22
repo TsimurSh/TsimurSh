@@ -1,7 +1,7 @@
 package pl.tima.homework.homework24;
 
 public abstract class Animal {
-    static String name;
+    public String name = "";
     public Animal() {
     }
     public Animal(String name) {
@@ -15,12 +15,11 @@ public abstract class Animal {
 }
 
 abstract class Fish extends Animal {
-    String name;
-    public Fish() {
+     Fish() {
     }
 
-    public Fish(String name) {
-        this.name = name;
+     Fish(String name) {
+        super(name);
     }
     abstract public void swim();
 

@@ -21,7 +21,7 @@ public class JavaRushTask {
             String temp = "";
             while (!temp.equals("exit")){
                 temp = reader.readLine();
-                string.append(temp).append('\n');
+                string.append(temp).append(" ");
             }
             newWriter.write(string.toString());
             newWriter.close();

@@ -16,7 +16,7 @@ public class Fakulatiw {
         System.out.println(test24_2.name);
         test24_2.sleep();
         test24_2.eat();
-        Mammal test24_3 = new Leon();
+        Mammal test24_3 = new Leon("Banifacy2");
         System.out.println(test24_3.name);
         test24_3.speak();
         test24_3.run();

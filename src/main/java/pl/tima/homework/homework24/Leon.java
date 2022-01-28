@@ -1,6 +1,6 @@
 package pl.tima.homework.homework24;
 
-public class Leon extends Mammal {
+public class Leon extends Cat {
     public Leon() {
     }
 

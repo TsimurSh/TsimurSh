@@ -21,8 +21,8 @@ public class StringMethods {
 //        System.out.println(b2);
 //        boolean b3 = s2.contains("ma");
 //        System.out.println(b3);
-        boolean b4 = s1.matches(s1);
-        System.out.println(b4);
+        boolean b5 = s1.matches(s1);
+        System.out.println(b5);
 
 
 

@@ -1,6 +1,6 @@
 package pl.tima.facultativ;
 
-import pl.tima.homework.homework24.*;
+import pl.tima.homework.homework25.*;
 
 public class Fakulatiw {
 

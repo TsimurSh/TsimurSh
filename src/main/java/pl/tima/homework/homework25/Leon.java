@@ -1,4 +1,4 @@
-package pl.tima.homework.homework24;
+package pl.tima.homework.homework25;
 
 public class Leon extends Cat {
     public Leon() {

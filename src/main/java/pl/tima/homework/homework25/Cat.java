@@ -1,4 +1,4 @@
-package pl.tima.homework.homework24;
+package pl.tima.homework.homework25;
 
 public class Cat extends Mammal{
     public Cat() {

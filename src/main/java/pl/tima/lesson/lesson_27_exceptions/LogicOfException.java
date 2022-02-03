@@ -7,7 +7,7 @@ public class LogicOfException {
     {
         System.out.println("main begin");
         System.out.println("main before call");
-        method1();
+        method3();
         if (exception == null)
         {
             System.out.println("main after call");
@@ -21,12 +21,12 @@ public class LogicOfException {
         }
         System.out.println("main end");
     }
-    public static void method1()
+    public static void method3()
     {
-        System.out.println("method1 begin");
+        System.out.println("method3 begin");
         method2();
         if (exception != null) return;
-        System.out.println("method1 end");
+        System.out.println("method3 end");
     }
     public static void method2()
     {

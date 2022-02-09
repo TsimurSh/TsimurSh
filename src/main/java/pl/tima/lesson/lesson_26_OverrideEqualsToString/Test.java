@@ -11,7 +11,7 @@ public class Test {
 
     public static void main(String[] args) {
         Test test1 = new Test("Green", "POTR");
-        Test test3 = new Test("Green", "POMM");
+        Test test3 = new Test("Green", "PMMM");
         Test test2 = new Test("Green", "POMM");
         System.out.println(test2.toString(test3));
         System.out.println();

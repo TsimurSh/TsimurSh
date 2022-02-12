@@ -2,9 +2,13 @@ package pl.tima.facultativ;
 
 import pl.tima.homework.homework25.*;
 
+import java.util.ArrayList;
+
 public class Fakulatiw {
 
     public static void main(String[] args) {
+        Mammal test25 = new Cat();
+        test25.sleep();
         Marlin test24 = new Marlin("Mechenosec");
         System.out.println(test24.name);
         test24.sleep();
@@ -22,8 +26,16 @@ public class Fakulatiw {
         test24_3.run();
         test24_3.eat();
         test24_3.sleep();
-
-
+        ArrayList <Animal> listOfAnimals = new ArrayList<>();
+        listOfAnimals.add(test24);
+        listOfAnimals.add(test25);
+        listOfAnimals.add((Animal) test24_1);
+        listOfAnimals.add(test24_3);
+        listOfAnimals.add(test24_2);
+        for (Object o : listOfAnimals){
+            if (o instanceof Animal)
+                System.out.println(o.toString());
+        }
 
 
 

@@ -3,9 +3,16 @@ package pl.tima.lesson.lesson_21.ArrayListColleion;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.List;
 
 public class ListArray {
     public static void main(String[] args) {
+        List <String> listOf = List.of("mammal", "collector", "fusion"); // метод List.of(elements <E>)
+        List <Object> copyOf = List.copyOf(listOf);
+
+
+
+
         ArrayList<StringBuilder> listsb1 = new ArrayList<>();
         StringBuilder sb1 = new StringBuilder("bell-boy");
         StringBuilder sb2 = new StringBuilder("desk-clerk");

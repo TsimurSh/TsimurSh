@@ -12,6 +12,12 @@ public abstract class Animal {
 
     public abstract void sleep();
 
+    @Override
+    public String toString() {
+        return "Animal{" + this.getClass() +
+                "name='" + name + '\'' +
+                '}';
+    }
 }
 
 abstract class Fish extends Animal {

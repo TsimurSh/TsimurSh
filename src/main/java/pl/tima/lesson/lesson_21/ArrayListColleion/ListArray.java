@@ -14,6 +14,7 @@ public class ListArray {
 
 
         ArrayList<StringBuilder> listsb1 = new ArrayList<>();
+        ArrayList<Integer> listsb2 = new ArrayList<>();
         StringBuilder sb1 = new StringBuilder("bell-boy");
         StringBuilder sb2 = new StringBuilder("desk-clerk");
         StringBuilder sb3 = new StringBuilder("lift-boy");

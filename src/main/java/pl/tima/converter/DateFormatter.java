@@ -3,16 +3,23 @@ package pl.tima.converter;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.*;
+
+
 
 import static java.util.GregorianCalendar.BC;
 
 public class DateFormatter {
 
     public static void main(String[] args) {
+        Date date = new Date();
+        LocalDateTime dateTime = LocalDateTime.of(2002,9,4,12,56);
+        DateTimeFormatter format1 = DateTimeFormatter.ISO_LOCAL_DATE_TIME;
+        System.out.println(dateTime.format(format1));
 
         SimpleDateFormat formatter = new SimpleDateFormat("dd MM yyyy");
-        Date date = new Date();
         System.out.println(formatter.format(date));
 
         GregorianCalendar cannes = new GregorianCalendar(216, 07, 22);

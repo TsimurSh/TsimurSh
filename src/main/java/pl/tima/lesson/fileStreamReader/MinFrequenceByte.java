@@ -1,11 +1,11 @@
-package pl.tima.lesson.FileStreamReader;
+package pl.tima.lesson.fileStreamReader;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
-public class MaxFrequenceByte {
+public class MinFrequenceByte {
     public static void main(String[] args) throws Exception {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String fileName = reader.readLine();
@@ -16,13 +16,13 @@ public class MaxFrequenceByte {
                 byteCountArray[fileInputStream.read()] += 1;
             }
         }
-        int maxCount = 0;
+        int minCount = Integer.MAX_VALUE;
         for (int byteCount : byteCountArray) {
-            if (byteCount > maxCount) maxCount = byteCount;
+            if (byteCount > 0 && byteCount < minCount) minCount = byteCount;
         }
         ArrayList<Integer> resultList = new ArrayList<>();
         for (int i = 0; i < byteCountArray.length; i++) {
-            if (byteCountArray[i] == maxCount) resultList.add(i);
+            if (byteCountArray[i] == minCount) resultList.add(i);
         }
         for (Integer resultItem : resultList) System.out.print(resultItem + " ");
     }

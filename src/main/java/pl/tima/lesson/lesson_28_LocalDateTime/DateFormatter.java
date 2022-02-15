@@ -1,9 +1,10 @@
-package pl.tima.converter;
+package pl.tima.lesson.lesson_28_LocalDateTime;
 
 
 import java.time.LocalDateTime;
 import java.time.Month;
 import java.time.format.DateTimeFormatter;
+import java.time.format.FormatStyle;
 import java.util.Date;
 
 public class DateFormatter {
@@ -11,10 +12,17 @@ public class DateFormatter {
     public static void main(String[] args) {
         Date date = new Date();
         LocalDateTime dateTime = LocalDateTime.now();//(2002,9,4,12,56);
-        LocalDateTime dateTimePee = LocalDateTime.of(2021, Month.FEBRUARY, 10 +
-                3, 14, 99, 345678);
-        DateTimeFormatter format1 = DateTimeFormatter.ISO_LOCAL_DATE_TIME;
-        System.out.println(dateTime.format(DateTimeFormatter.ISO_WEEK_DATE));
+        LocalDateTime dateTime2 = LocalDateTime.of(2021, Month.FEBRUARY, 10 +
+                3, 11, 19, 38,87556);
+        System.out.println(dateTime2.format(DateTimeFormatter.ISO_WEEK_DATE));
+
+        DateTimeFormatter format1 = DateTimeFormatter.ofLocalizedDate(FormatStyle.SHORT);
+        DateTimeFormatter format2 = DateTimeFormatter.ofLocalizedTime(FormatStyle.FULL);
+        DateTimeFormatter format3 = DateTimeFormatter.ofPattern("d, MMMM, YYYY, hh:mm");
+        LocalDateTime myFormat = LocalDateTime.parse("2013-4-15");
+        System.out.println(format1.format(dateTime));
+        System.out.println(format3.format(dateTime));
+        System.out.println(myFormat.format(DateTimeFormatter.ISO_WEEK_DATE));
 
 //        SimpleDateFormat formatter = new SimpleDateFormat("dd MM yyyy");
 //        System.out.println(formatter.format(date));

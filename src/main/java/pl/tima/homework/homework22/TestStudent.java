@@ -6,7 +6,7 @@ package pl.tima.homework.homework22;
         StringBuilder sb1 = new StringBuilder("Wal");
         st1.setName(sb1);
         st1.setCourse(2);
-        st1.setGrade(4.5);
+        st1.setAvGrade(4.5);
         st1.showInfo();
     }
 }

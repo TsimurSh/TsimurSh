@@ -19,12 +19,14 @@ public class JavaRushTask {
             StringBuilder string = new StringBuilder();
 
             String temp = "";
-            while (!temp.equals("exit")){
-                temp = reader.readLine();
-                string.append(temp).append(" ");
-            }
+//            while (!temp.equals("exit")){
+//                temp = reader.readLine();
+//                string.append(temp).append(" ");
+//            }
             newWriter.write(string.toString());
             newWriter.close();
+            int charr = (char) ',';
+            System.out.println(charr);
         }
     }
 

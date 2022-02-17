@@ -1,18 +1,24 @@
 package pl.tima.homework.homework22;
 
-class Student {
-    private  StringBuilder name;
-    private  int course;
-    private  double grade;
+public class Student {
+    public String name;
+    public  int course;
+    public double avGrade;
+    public  int age;
 
-    public void setName(StringBuilder in) {
-        if (in.length() > 0 && in.length() < 3)
-            this.name = in;
+    public Student() {
     }
 
-    public void setGrade(double grade) {
-        if (grade > 0 && grade <= 10)
-            this.grade = grade;
+    public Student(String name, int age, int course, double avGrade) {
+        this.name = name;
+        this.course = course;
+        this.avGrade = avGrade;
+        this.age = age;
+    }
+
+    public void setAvGrade(double avGrade) {
+        if (avGrade > 0 && avGrade <= 10)
+            this.avGrade = avGrade;
     }
 
     public void setCourse(int course) {
@@ -30,11 +36,11 @@ class Student {
 
     }
 
-    public  double getGrade() {
-        return grade;
+    public  double getAvGrade() {
+        return avGrade;
     }
 
     public void showInfo (){
-        System.out.println("Имя: " + getName() + "Курс: " + getCourse() + "Оценка: " + getGrade());
+        System.out.println("Имя: " + getName() + "Курс: " + getCourse() + "Оценка: " + getAvGrade());
     }
 }

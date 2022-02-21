@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class GenericsExample {
     public static void main(String[] args) {
-    Info <String> tipe = new Info<String>("No-noooo");
+    var tipe = new Info<>("No-noooo");
     ArrayList <Integer> intList = new ArrayList<>();
     intList.add(45);
     intList.add(43);

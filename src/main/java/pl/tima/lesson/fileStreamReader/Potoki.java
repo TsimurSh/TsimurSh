@@ -1,18 +1,22 @@
-package pl.tima.lesson;
+package pl.tima.lesson.fileStreamReader;
 
 
-import java.io.IOException;
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.io.InputStreamReader;
+import java.io.*;
 
 /*
-Писатель в файл с консоли
 */
 
-public class JavaRushTask {
+public class Potoki {
         public static void main(String[] args) throws IOException {
+
+            FileOutputStream fileOutputStream = new FileOutputStream("C:\\Users\\Username\\Desktop\\test.txt",
+                    true); // boolean append if true тогда данные не перезаписываются
+
+            String greetings = "Привет! Добро пожаловать на JavaRush - лучший сайт для тех, кто хочет стать программистом!\r\n";
+
+            fileOutputStream.write(greetings.getBytes());
+            fileOutputStream.close();
+
             BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
             String sours = reader.readLine();
             BufferedWriter newWriter = new BufferedWriter(new FileWriter(sours));

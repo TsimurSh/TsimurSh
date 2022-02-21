@@ -6,12 +6,12 @@ import java.util.StringTokenizer;
 public class TokenizerHowIsWork {
 
     public static void main(String[] args) {
-        String packagePath = "java.util.stream";
-        String[] tokens = getTokens(packagePath, "\\.");
-        System.out.println(Arrays.toString(tokens));
+//        String packagePath = "java.util.stream";
+//        String[] tokens = getTokens(packagePath, "\\.");
+//        System.out.println(Arrays.toString(tokens));
         String str = "Good news everyone!";
 
-        StringTokenizer tokenizer = new StringTokenizer(str,"ne");
+        StringTokenizer tokenizer = new StringTokenizer(str," ");
         while (tokenizer.hasMoreTokens())
         {
             String token = tokenizer.nextToken();

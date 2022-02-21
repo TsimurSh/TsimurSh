@@ -40,7 +40,13 @@ public class Student {
         return avGrade;
     }
 
-    public void showInfo (){
-        System.out.println("Имя: " + getName() + "Курс: " + getCourse() + "Оценка: " + getAvGrade());
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", course=" + course +
+                ", avGrade=" + avGrade +
+                ", age=" + age +
+                '}';
     }
 }

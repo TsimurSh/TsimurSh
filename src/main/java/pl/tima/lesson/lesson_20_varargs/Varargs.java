@@ -10,7 +10,7 @@ public class Varargs {
         }
         System.out.println(summa);
         }
-        static int [] copyIntArrsToArr ( int[] ...arrs){
+        static int [] copyIntArrsToArr ( int[] ...arrs){   // массив в varargs
         int lenth =0;
         for (int [] arr : arrs){
             lenth += arr.length;

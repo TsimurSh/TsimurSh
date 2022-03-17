@@ -35,7 +35,7 @@ public class DeleteSameName {
 
     public static void removeItemFromMapByValue(Map<String, String> map, String value) {
         Map<String, String> copy = new HashMap<>(map);
-        for (Map.Entry<String, String> pair : copy.entrySet()) {
+        for (Map.Entry<String, String> pair : copy.entrySet()) { // for each to iterate HashMap
             if (pair.getValue().equals(value)) {
                 map.remove(pair.getKey());
             }

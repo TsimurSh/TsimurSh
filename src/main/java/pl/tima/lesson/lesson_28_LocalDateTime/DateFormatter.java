@@ -1,6 +1,7 @@
 package pl.tima.lesson.lesson_28_LocalDateTime;
 
 
+import java.sql.Timestamp;
 import java.time.LocalDateTime;
 import java.time.Month;
 import java.time.format.DateTimeFormatter;
@@ -11,6 +12,8 @@ public class DateFormatter {
 
     public static void main(String[] args) {
         Date date = new Date();
+//        Timestamp timestamp = (Timestamp) date;
+        System.out.println(date.toInstant());
         LocalDateTime dateTime = LocalDateTime.now();//(2002,9,4,12,56);
         LocalDateTime dateTime2 = LocalDateTime.of(2021, Month.FEBRUARY, 10 +
                 3, 11, 19, 38,87556);
@@ -19,7 +22,7 @@ public class DateFormatter {
         DateTimeFormatter format1 = DateTimeFormatter.ofLocalizedDate(FormatStyle.SHORT);
         DateTimeFormatter format2 = DateTimeFormatter.ofLocalizedTime(FormatStyle.FULL);
         DateTimeFormatter format3 = DateTimeFormatter.ofPattern("d, MMMM, YYYY, hh:mm");
-        LocalDateTime myFormat = LocalDateTime.parse("2013-4-15");
+        LocalDateTime myFormat = LocalDateTime.parse("2013-04-15");
         System.out.println(format1.format(dateTime));
         System.out.println(format3.format(dateTime));
         System.out.println(myFormat.format(DateTimeFormatter.ISO_WEEK_DATE));

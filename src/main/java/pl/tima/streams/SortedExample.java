@@ -12,7 +12,12 @@ public class SortedExample {
         List <User> sortedUsers =
         allUsers.stream().sorted((a,b)-> a.getName().compareToIgnoreCase(b.getName()))
                 .collect(Collectors.toList());
-        System.out.println(allUsers);
-        System.out.println(sortedUsers);
+
+        User user =
+        allUsers.stream().sorted((a,b)-> a.getId() - b.getId())
+                .findAny().orElse(new User());
+//        System.out.println(allUsers);
+//        System.out.println(sortedUsers);
+        System.out.println(user);
     }
 }

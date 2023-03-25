@@ -19,8 +19,12 @@ public class MapExample {
                 .collect(Collectors.toList());
         System.out.println(newList);
 
-        int [] oldArray = {98,65,24,56};
-        int [] newArray;
+        long [] oldArray = {98,65,24,56};
+        String arrayToString = Arrays.toString(oldArray);
+        String string = arrayToString.substring(1, arrayToString.length() - 1);
+        System.out.println(string);
+
+        long [] newArray;
         newArray = Arrays.stream(oldArray).map(element -> {
             if (element < 30){
                 element += element + 1;}

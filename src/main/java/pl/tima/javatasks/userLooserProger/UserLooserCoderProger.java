@@ -1,4 +1,4 @@
-package pl.tima.javatusks.userLooserProger;
+package pl.tima.javatasks.userLooserProger;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

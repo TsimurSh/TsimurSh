@@ -1,4 +1,4 @@
-package pl.tima.javatusks.factoryhen;
+package pl.tima.javatasks.factoryhen;
 
 public class UkrainianHen extends Hen{
     String country = "Ukrainian";

@@ -12,7 +12,7 @@ public class FilterExample {
 
         List <User> allUsers = UserRepository.getUsersFromDataBase();
         List <User> allUpdUsers = allUsers.stream().filter(element -> element
-                .getAge() > 20 || element.getGender() == Gender.FEMALE).collect(Collectors.toList());
+                .getAge() > 20 || element.getGender() == Gender.FEMALE).toList();
         allUpdUsers.forEach(System.out::println);
     }
 }

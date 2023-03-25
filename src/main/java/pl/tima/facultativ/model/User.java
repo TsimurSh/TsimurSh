@@ -2,7 +2,7 @@ package pl.tima.facultativ.model;
 
 import java.util.Objects;
 
-public class User {
+public class User implements Comparable <User>{
     private Integer id;
     private String name;
     private String lastName;
@@ -36,12 +36,19 @@ public class User {
         return Objects.hash(id, name, lastName, age, gender);
     }
 
+
+
     public User(Integer id, String name, String lastName, Integer age, Gender gender) {
         this.id = id;
         this.name = name;
         this.lastName = lastName;
         this.age = age;
         this.gender = gender;
+    }
+
+    @Override
+    public int compareTo(User o) {
+        return this.name.compareToIgnoreCase(o.name);
     }
 
     public void setId(Integer id) {

@@ -1,6 +1,6 @@
 package pl.tima.homework.homework22;
 
-public class Student {
+public class Student implements Comparable<Student> {
     public String name;
     public  int course;
     public double avGrade;
@@ -48,5 +48,10 @@ public class Student {
                 ", avGrade=" + avGrade +
                 ", age=" + age +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Student other) {
+        return this.age- other.age;
     }
 }

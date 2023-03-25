@@ -1,4 +1,4 @@
-package pl.tima.javatusks.userLooserProger;
+package pl.tima.javatasks.userLooserProger;
 
 public interface Person {
     class User implements Person {

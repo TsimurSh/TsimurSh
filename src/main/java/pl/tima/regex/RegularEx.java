@@ -13,7 +13,7 @@ public class RegularEx {
         Pattern pattern4 = Pattern.compile("\\d");
         Pattern pattern5 = Pattern.compile("\\w");
         Pattern pattern = Pattern.compile("\\w+(9)");
-        Matcher matcher = pattern2.matcher(testString);
+        Matcher matcher = pattern4.matcher(testString);
 
         while (matcher.find()) {
             System.out.println( " " + matcher.start()+ " : " + matcher.group());

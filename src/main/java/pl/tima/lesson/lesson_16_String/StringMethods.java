@@ -2,9 +2,11 @@ package pl.tima.lesson.lesson_16_String;
 
 public class StringMethods {
     public static void main(String[] args) {
-        String s1 = new String("privat");
+        String s1 = new String("\"at\":{ privat");
         String s2 = new String("mamarama");
 //
+        String s5 = s1.replaceFirst("\\bat\\b","ucha").toUpperCase();
+        System.out.println(s5);
 //        char  aT = s1.charAt(3);
 //        System.out.println(aT);
 //
@@ -21,8 +23,8 @@ public class StringMethods {
 //        System.out.println(b2);
 //        boolean b3 = s2.contains("ma");
 //        System.out.println(b3);
-        boolean b5 = s1.matches(s1);
-        System.out.println(b5);
+//        boolean b5 = s1.matches(s1);
+//        System.out.println(b5);
 
 
 
@@ -33,8 +35,6 @@ public class StringMethods {
 //        String s4 = s2.trim();
 //        System.out.println(s4);
 //
-//        String s5 = s1.replace("at","ucha");
-//        System.out.println(s5);
 //
 //        String s5_1 = "mmm";
 //        String s6 = s5_1.replace('m','m');

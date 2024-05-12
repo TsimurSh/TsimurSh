@@ -28,14 +28,14 @@ public class FlatMapExample {
         facultries.add(fac1);
         facultries.add(fac2);
 
-//        facultries.stream()
-//                .flatMap(fac -> fac.getStudentListOf()
-//                        .stream()).filter(student -> student.getAvGrade() > 7)
-//                .map(student -> {
-//                    student.setCourse(2);
-//                    return student;
-//                })
-//                .forEach(System.out::println);
+        facultries.stream()
+                .flatMap(fac -> fac.getStudentListOf()
+                        .stream()).filter(student -> student.getAvGrade() > 7)
+                .map(student -> {
+                    student.setCourse(2);
+                    return student;
+                })
+                .forEach(System.out::println);
 
         ArrayList<Student> suppStudent;
         suppStudent = studentCreater(() -> new Student("hash5", 45, 1, 4.5));

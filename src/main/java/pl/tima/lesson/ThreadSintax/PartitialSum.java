@@ -9,7 +9,7 @@ class SumNumbers {
     private static Long sum = 0L;
 
     public static void main(String[] args) throws ExecutionException, InterruptedException {
-        ExecutorService executor = Executors.newFixedThreadPool(10);
+        ExecutorService executor = Executors.newFixedThreadPool(5);
         List<Future<Long>> numbers = new ArrayList<>();
         long valueDivideBy10 = value / 10;
         for (int i = 0; i < 10; i++) {
@@ -42,7 +42,7 @@ class PartitialSum implements Callable<Long> {
         for (long i = from; i <= to; i++) {
             localSum += i;
         }
-        System.out.println("Sum grom: " + from + "+ to: " + to + " = " + localSum);
+        System.out.println("Sum from " + from + " to " + to + " = " + localSum);
         return localSum;
     }
 }

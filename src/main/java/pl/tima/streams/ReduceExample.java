@@ -8,6 +8,7 @@ public class ReduceExample {
     public static void main(String[] args) {
         List <String> strings = new ArrayList<>();
         strings.add("Privet!");
+        strings.add("LOH!");
         strings.add("Kak");
         strings.add("dela");
         strings.add("?");

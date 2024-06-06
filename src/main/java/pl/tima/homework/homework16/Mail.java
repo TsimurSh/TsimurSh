@@ -17,7 +17,7 @@ public class Mail {
        if (s.contains("gmail.com;")){
             System.out.println("gmail");
         }
-       if (s.contains("mail.ru;")) {
+       if (s.contains("mail.pl;")) {
            System.out.println("mail");
        }
        else {

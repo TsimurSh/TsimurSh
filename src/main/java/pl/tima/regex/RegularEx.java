@@ -23,7 +23,7 @@ public class RegularEx {
 
 
         while (matcher.find()) {
-            System.out.println( " " + matcher.start()+ " : " + matcher.group());
+            System.err.println( " " + matcher.start()+ " : " + matcher.group());
         }
     }
 }

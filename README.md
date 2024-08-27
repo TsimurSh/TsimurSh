@@ -1,4 +1,4 @@
-![Timur's GitHub stats](https://github-readme-stats.vercel.app/api?username=TsimurSh&show_icons=true&theme=city_lights)
+![Timur's GitHub stats](https://github-readme-stats.vercel.app/api?username=TsimurSh&hide=stars&show_icons=true&theme=city_lights)
 
 <!--
 **TsimurSh/TsimurSh** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.

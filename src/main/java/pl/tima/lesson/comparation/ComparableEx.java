@@ -8,7 +8,7 @@ import java.util.Collections;
 import java.util.List;
 
 
-public class ComparablesEx {
+public class ComparableEx {
     public static void main(String[] args) {
 
 

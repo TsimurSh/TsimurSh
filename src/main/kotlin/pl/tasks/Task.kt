@@ -1,0 +1,18 @@
+// Summary1/Task5.kt
+package pl.tasks
+
+fun everyFifth(start: Int, end: Int) {
+  for (i in start .. end) {
+  if (( i-start ) % 5 == 4)  {println(i)}
+  }
+}
+
+fun main() {
+  everyFifth(3, 14)
+}
+/* Output:
+15
+20
+25
+30
+*/

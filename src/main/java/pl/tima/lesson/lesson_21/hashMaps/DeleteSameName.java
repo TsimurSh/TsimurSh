@@ -1,7 +1,14 @@
 package pl.tima.lesson.lesson_21.hashMaps;
 
+import pl.tima.facultativ.model.Gender;
+import pl.tima.homework.homework22.Student;
+
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 public class DeleteSameName {
     public static Map<String, String> createMap() {
@@ -46,6 +53,16 @@ public class DeleteSameName {
         Map<String, String> surName = createMap();
         removeTheFirstNameDuplicates(surName);
         System.out.println(surName);
+
+//        Example of putting to map enum list as keys and arraylist elements as values
+        List <Student> studentList = new ArrayList<>();
+        Map<Gender, Student> statisticRepTest = new HashMap<>();
+        List<Gender> plans = List.of(Gender.values());
+        statisticRepTest
+                .putAll(IntStream.range(0, plans.size())
+                        .boxed()
+                        .collect(Collectors.toMap(plans::get, studentList::get,
+                                (e1, e2) -> e1, HashMap::new)));
 
     }
 }
